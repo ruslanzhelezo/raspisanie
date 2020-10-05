@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [{ "src": "app.js", "use": "@now/node" }],
+    "routes": [
+      {
+        "src": "/.*",
+        "dest": "/app.js"
+      }
+    ],
+    "env": {
+      "MONGODB_URL": "@mongodb_url_sunshine",
+      "TOKEN_SECRET": "@token_secret_sunshine"
+    }
+  }
+  
